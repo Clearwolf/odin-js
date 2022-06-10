@@ -4,4 +4,11 @@ function computerPlay() {
     return randomPlay;
 }
 
-console.log(computerPlay());
+function playSingleRound() {
+    const playerSelection = "rock";
+    const computerSelection = computerPlay();
+    if (playerSelection.toLowerCase() === computerSelection.toLowerCase()) {
+        return "You tied.  Nobody wins, everyone gets a participation trophy."};
+}
+
+    console.log(playSingleRound());
