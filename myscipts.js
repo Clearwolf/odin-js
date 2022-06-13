@@ -13,6 +13,7 @@ function playSingleRound(playerSelection, computerSelection) {
     const win = "You win. You beat the computer. You are the superior being.";
     const lose = "You lose. Now would be a good time to reflect on the decisions you've made in your life that have led you to this moment.";
     const tie = "You tied. Nobody wins, everyone gets a participation trophy."
+    const illegalPlay = "Your input was illegal."
 
     if (playerSelection.toLowerCase() === computerSelection.toLowerCase()) {
         return tie}
@@ -35,10 +36,14 @@ function playSingleRound(playerSelection, computerSelection) {
     else if (playerSelection.toLowerCase() === "scissors" && computerSelection.toLowerCase() === "paper") {
         return win}
 
+    else {
+        return illegalPlay
+    }
+
 }
 
-const playerSelection = "rock";
+const playerSelection = prompt("Rock, Paper, or Scissors?");
 const computerSelection = computerPlay();
 
-console.log(playSingleRound(playerSelection, computerSelection));
+
 console.log(playSingleRound(playerSelection, computerSelection));
