@@ -41,3 +41,4 @@ const playerSelection = "rock";
 const computerSelection = computerPlay();
 
 console.log(playSingleRound(playerSelection, computerSelection));
+console.log(playSingleRound(playerSelection, computerSelection));
